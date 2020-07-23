@@ -1,0 +1,13 @@
+{
+  "name": "cloud-func-ncm",
+  "version": "1.0.0",
+  "description": "为腾讯云函数专门设计的每日日推收藏，签到助手",
+  "main": "core.js",
+  "repository": "https://github.com/greenhat616/ncm-helper-qcloud",
+  "author": "a632079 <i@a632079.me>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "NeteaseCloudMusicApi": "^3.34.2"
+  }
+}
