@@ -68,7 +68,7 @@ async function Do () {
   console.log('执行完成！')
 }
 
-exports.main = () => {
+exports.main_handler = async (event, context, callback) => {
   Do()
     .catch(err => {
       console.log(err)
