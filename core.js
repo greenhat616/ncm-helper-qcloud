@@ -1,6 +1,6 @@
 const api = require('NeteaseCloudMusicApi')
 
-async function main () {
+async function do () {
   // 定义区，提供了使用 Cookie 和使用手机号登录的方法
   let cookie = '' // 如果为空接下来会尝试使用手机号登录
 
@@ -68,8 +68,10 @@ async function main () {
   console.log('执行完成！')
 }
 
-main()
-  .catch(err => {
-    console.log(err)
-    process.exit(1)
-  })
+exports.main = () => {
+  do()
+    .catch(err => {
+      console.log(err)
+      process.exit(1)
+    })
+}
